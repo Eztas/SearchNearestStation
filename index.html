@@ -1,9 +1,12 @@
 <!DOCTYPE HTML>
-
+<!-- 同一オリジンじゃないから, iframeでもアクセス不可, postMessageでも無理そう-->
 <html lang="ja">
 
 <head>
-      <title>fecthでスクレイピングしよう</title>
+    <meta charset="utf-8">
+    <meta name="description" content="既存のサイトをくっつけて, 最寄り駅を1ページ内で見つけられるサイト.">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>最寄り駅検索ページ</title>
 </head>
 
 <script>
@@ -11,13 +14,6 @@
         const companyName = document.getElementById("company-name").value;
         const addressMap = document.getElementById("address_map");
         addressMap.src = "https://maps.google.co.jp/maps?output=embed&q=" + companyName;
-
-        addressMap.onload = function() {
-            const iframeDoc = addressMap.contentDocument || addressMap.contentWindow.document;
-            const addressDiv = iframeDoc.querySelector('.address');
-            const addressText = addressDiv.textContent;
-            document.getElementById("company-name").value = addressText;
-        };
     }
 </script>
 
