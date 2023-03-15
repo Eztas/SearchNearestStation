@@ -22,3 +22,4 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 サイトも見つかったけど, サービス利用不可とかだった
 [例1](https://zenn.dev/ichii731/articles/509ec8a06a9082)
+[例2](https://www.docswell.com/s/ichii731/ZNXYGK-nearest#p4)
