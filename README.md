@@ -23,4 +23,4 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 サイトも見つかったけど, サービス利用不可とかだった
 [例1, サンプルhtml](https://zenn.dev/ichii731/articles/509ec8a06a9082)
 [例2, バーコード](https://www.docswell.com/s/ichii731/ZNXYGK-nearest#p4)
-[例3, Nearest API](https://station.ic731.net/)
+[例3, サ終してる? Nearest API](https://station.ic731.net/)
