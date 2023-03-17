@@ -32,8 +32,18 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 # 3月17日
 
-いました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
+他者が実装したものがありました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
 
-と思ってたらAPIキー無効になってました
+と思ってたらAPIキー無効になってました.
 
-というよりダウンロードしたものに, Geocode.jsってやつがないからシンプルに実行できない
+Google Spread SheetとGAS, Heartrails Express API(登録不要, 無料)を用いることで、場所名を打ち込むだけで, その場所から最寄り駅までのルートを示す,
+Google Mapのリンクを置くことに成功
+
+課題
+
+Google Mapそのものをiframeなどで載せることができないので、一度リンクを踏まないと実際の図までは見れない
+
+Maps geocoderの知識量や予測力が弱く, 地方企業名などを入力しても対応してくれないことがある.
+
+Spread Sheetに値を入力するという形式なので、利用する際はわざわざGoogle Driveを立ち上げるか、
+Google Spread Sheetのアプリを入れる必要があり、サイトを開くまでの手間がかかり、本末転倒になっている。
