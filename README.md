@@ -34,3 +34,5 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 いました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
 
+と思ってたらAPIキー無効になってました
+
