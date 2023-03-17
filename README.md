@@ -36,3 +36,4 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 と思ってたらAPIキー無効になってました
 
+というよりダウンロードしたものに, Geocode.jsってやつがないからシンプルに実行できない
