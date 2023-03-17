@@ -29,3 +29,8 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 [例3, サ終してる? Nearest API](https://station.ic731.net/)
 
 [例4, 運用停止](https://maps.multisoup.co.jp/blog/2931/)
+
+# 3月17日
+
+いました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
+
