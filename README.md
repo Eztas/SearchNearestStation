@@ -30,7 +30,7 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 [例4, 運用停止](https://maps.multisoup.co.jp/blog/2931/)
 
-# 3月17日
+# SearchNearestStation with Google Spread Sheet(3/17)
 
 他者が実装したものがありました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
 
@@ -56,7 +56,7 @@ Google Spread Sheetのアプリを入れる必要があり、サイトを開く�
 
 しかし、これはあくまでPCで使う上での感想であり、スマホで使う場合はGoogle Spread Sheetのアプリを導入していないと全く使えないという点で、かなり不便である。
 
-# 3月18日~3月19日
+# SearchNearestStation with HTML(3/20)
 
 スプレッドシート利用によるデメリットをなくすために、GASからhtmlwebページを作成する手法を用いる.
 
@@ -77,7 +77,7 @@ Google Spread Sheetのアプリを入れる必要があり、サイトを開く�
 
 無料でできる範囲はどうやらここまでのようである.
 
-また, PCでのテストしかしていなかったため, いざスマホで使ってみると横に広いため, 縦長のスマホでは使いずらい印象を受けた.
+また, PCでのテストしかしていなかったため, スマホでの使用感を知らずにいたのだが, いざスマホで使ってみると横に広いため, 縦長のスマホでは使いずらい印象を受けた.
 
 ユーザー(私自身)がいつでもどこでもスマホで使えるような状況を想定しており, かつPCで使うならスプレッドシート版の方を使えばいいため,
 
