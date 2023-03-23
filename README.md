@@ -89,7 +89,17 @@ html版はスマホでの使いやすさに追求する.
 
 Google Mapそのものをiframeで埋め込みたかった
 
-# 3/22 Mapsクラス
+# 地図有HTML(3/22~3/24)
 
-Heartrails Express APIを無理に使わなくても, Mapsだけでコードが完成する可能性が見えてきた
-というかそれを使ったらめっちゃ楽かもしれない.
+[画像1](https://github.com/Eztas/SearchNearestStation/blob/main/img/sample1.png)
+や
+[画像2](https://github.com/Eztas/SearchNearestStation/blob/main/img/sample2.png)のように、
+入力された場所名に関する, 最寄り駅, 路線, そこまでの距離と徒歩でかかる時間, さらには静的な地図画像を生成できるようになった.
+
+GASの可能性を感じた.
+
+課題
+
+動的な地図画像じゃないので, 詳細なルートなどを知ろうとするためには, 結局リンクを踏まないといけない.
+
+画像なしverのサイトと, 画像ありverのサイトを比較すると, 明らかに画像ありverのサイトの動作が遅すぎる.
