@@ -30,6 +30,8 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 [例4, 運用停止](https://maps.multisoup.co.jp/blog/2931/)
 
+[例5, 場所名で検索できない](https://dev.classmethod.jp/articles/heart-rails-express/)
+
 # SearchNearestStation with Google Spread Sheet(3/17)
 
 他者が実装したものがありました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
