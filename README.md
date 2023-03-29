@@ -36,7 +36,9 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 他者が実装したものがありました. https://www.pahoo.org/e-soul/webtech/js01/js01-11-01.shtm
 
-と思ってたらAPIキー無効になってました.
+と思ってたらAPIキー無効になってるからなのか, 単純に自分の実行の仕方に間違いがあったのか分かりませんが,
+
+上手く動作させることができませんでした.
 
 Google Spread SheetとGAS, Heartrails Express API(登録不要, 無料)を用いることで、場所名を打ち込むだけで, その場所から最寄り駅までのルートを示す,
 Google Mapのリンクを置くことに成功
