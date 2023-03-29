@@ -33,7 +33,7 @@ form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもう�
 
 上手く動作させることができませんでした.
 
-Google Spread SheetとGAS, Heartrails Express API(登録不要, 無料)を用いることで、場所名を打ち込むだけで, その場所から最寄り駅までのルートを示す,
+話は変わりますが, Google Spread SheetとGAS, Heartrails Express API(登録不要, 無料)を用いることで、場所名を打ち込むだけで, その場所から最寄り駅までのルートを示す,
 Google Mapのリンクを置くことに成功
 
 課題
