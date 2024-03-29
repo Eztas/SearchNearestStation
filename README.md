@@ -5,13 +5,14 @@
 いつも手間を感じていた。
 
 そこで、集合場所名だけを打てば、その場所の最寄り駅とそこまでかかる時間まで一気に分かるものがあれば良いと考えて、作成に至った。
-API周りはお金がかかるので、それを使わずに9割くらい自作のものを作りたかったが、心が折れた。
 
-妥協案として、集合場所名を打つとグーグルマップでその住所が分かる機構と、それをわざわざ新しいタブを作らなくても調べられるように、
+まず、既存のものを組み合わせる方向性で考える。
+
+集合場所名を打つとグーグルマップでその住所が分かる機構と、それをわざわざ新しいタブを作らなくても調べられるように、
 住所だけで最寄り駅とその場所までの歩く時間が分かる、
-[NAVITIME](https://api-sdk.navitime.co.jp/api/specs/examples/sample/node_around_search/node_around_search.html)のサイトを1つのページにまとめるものとする。
+[NAVITIME](https://api-sdk.navitime.co.jp/api/specs/examples/sample/node_around_search/node_around_search.html)のサイトを1つのページにまとめたものを作成した。
 
-form actionやfetch, XMLHttpsrequestなどを用いてみたが、どれもうまくいかなかった。
+form actionやfetch, XMLHttpsrequestなどを用いてwebページにデータを送る方法を試みたが、どれもうまくいかなかった。
 
 サイトも色々見つかったが, サービス利用不可などにより使えないものが多かった。
 
