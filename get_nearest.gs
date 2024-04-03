@@ -132,7 +132,8 @@ function getSavedImageID(blob){ // Google Driveに引数Blobにある静的地�
   var file = folder.createFile(blob);
 
   file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-  return "http://drive.google.com/uc?export=view&id=" + file.getId();
+  //return "http://drive.google.com/uc?export=view&id=" + file.getId(); // Google Driveの仕様変更で今はこれで画像を表示できない
+  return "https://lh3.googleusercontent.com/d/" + file.getId();
 }
 
 function make_station_HTMLtable(spot_name_to_start, data){ // 場所名とjsonテキストのデータを用いることで, 最寄り駅のgooglemap一覧テーブルを生成
