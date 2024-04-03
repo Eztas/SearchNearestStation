@@ -127,7 +127,7 @@ function getGoogleMap_image_src(route){ // ルート情報から静的地図画�
 }
 
 function getSavedImageID(blob){ // Google Driveに引数Blobにある静的地図画像を保存し, またそのURLを取得
-  const SaveImageFolderID = "1D4drTVzCZNbyH4ry828jYJYL8MGPAHm4";
+  const SaveImageFolderID = "FolderID";
   var folder = DriveApp.getFolderById(SaveImageFolderID);
   var file = folder.createFile(blob);
 
