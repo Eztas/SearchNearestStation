@@ -129,5 +129,5 @@ Maps.newStaticMapで対応.
 道のりの長さで地図のズーム度合いを決めていたが, 距離(2地点の直線距離)の長さで決定する.
 (テスト検索先 大阪城,  東京スカイツリー,　京都水族館その他)
 
-リンク(https://script.google.com/macros/s/AKfycby3xh7zvfV6hwYDxbrE9aCgq7DKZBkhvGkUHXGdm8KWnIQQyv8qoM2uZXp5fXr0XRhOLA/exec)
+リンク(https://script.google.com/macros/s/AKfycbzxlj1v8qszxb652YSKw8bOYXcmE1nyNMK2s21Qx2LP7f83tQVfxQR6D9GJWiMVGPcnNw/exec)
 
