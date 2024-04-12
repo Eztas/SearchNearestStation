@@ -58,7 +58,7 @@ Google Spread Sheetのアプリを入れる必要があり、サイトを開く�
 
 しかし, GASでは, iframeでgoogle mapのwebページを埋め込む手法を制限、もしくは禁止しているようである.
 
-ルート情報を表記させたgoogle mapをiframeで埋め込むこと自体が, GASではない通常のhtmlのwebページでも制限されていた.
+ルート情報を表記させたgoogle mapをiframeで埋め込むこと自体が, GASではない通常のhtmlのwebページでも制限されていた.(2024/4/12時点でも確認済み)
 
 とりあえず, また地図画像を載せることを諦めて, htmlでスプレッドシートで行っていたことと同様にURLテーブルを表示させることにした.
 
@@ -100,7 +100,6 @@ html版はスマホでの使いやすさに追求する.
 
 <h3>Google Mapそのものをiframeで埋め込みたかった</h3>
 
-Google Apps Scriptで作ったwebページやGithub Pagesでは, ルート情報を載せたGoogle Mapは掲載できない.(2024/4/12時点でも確認済み)
 そこでMaps.newStaticMapで対応.
 
 # SearchNearestStation with HTML and StaticMap(3/24)
