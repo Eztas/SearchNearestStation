@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #address_to_go{
+        line-height: 3;
+      }
+      .column1 {
+        width: 170px;
+        text-align: center;
+      }
+      a:visited {
+        color: blue;
+      }
+      body{
+        text-align: center;
+      }
+      table{
+        text-align: center;
+        margin : auto;
+      }
+      input[type="radio"]{
+        transform: scale(2.0);
+        margin: 10px 10px 0px 10px; /*上 右 下 左*/
+      }
+    </style>
+    <title>目的地の最寄り駅情報(最寄り駅名, 路線, 徒歩での距離と時間, ルート情報)検索</title>
+  </head>
+  <body>
+      <p>目的地を入力してください.</p>
+      <input type="text" size="20" id="address_to_go">
+      <input type="submit" value="×" onclick="clear_name()">
+      <input type="submit" id="search" value="検索" onclick="get_address()">
+      <br>
+      <form id="choice_map">
+        <input name="map_or_none" id="button-1" type="radio" value="map"><label for="button-1">MAPあり</label>
+        <input name="map_or_none" id="button-2" type="radio" value="none" checked><label for="button-2">MAPなし</label>
+      </form>
+      <br>
+      <table border="1" style="border-collapse:collapse;">
+        <tr>
+          <th class="column1">最寄り駅名<br>路線<br>距離(時間)</th>
+        </tr>
+      </table>
+      <div id="output_stations"></div>
+
+      <p>表の青文字をクリックすると<br>Google Mapでのルート情報が得られます</p>
+      <p>MAPなしは数秒, MAPありは十数秒で<br>結果が出力されます</p>
+
+      <p class="copyright"><small>&copy;
+        <a href="http://express.heartrails.com/api.html">Heartrails Express API</a></small></p> 
+  </body>
+  <script>
+    function clear_name(){ // inputに入力した文字をクリア
+      document.getElementById('address_to_go').value = "";
+    }
+
+    document.getElementById("search").addEventListener('click', () => { // Loading画面を表示, 二重検索の禁止
+      document.getElementById("output_stations").innerHTML = "Searching…";
+      document.getElementById("search").disabled = true;
+    });
+
+    function get_address() { // テーブル, エラーなどの結果を表示
+      google.script.run.withSuccessHandler(function(result) {
+        document.getElementById("output_stations").innerHTML = "";
+        if(result == 0){
+          document.getElementById("output_stations").innerHTML = "場所名が入力されていません.";
+        }
+        else if(result == 1){
+          document.getElementById("output_stations").innerHTML = "場所名の住所が見つかりませんでした";
+        }
+        else if(result == 2){
+          document.getElementById("output_stations").innerHTML = "その場所に関する最寄り駅が見つかりませんでした";
+        }
+        else{
+          document.getElementById("output_stations").innerHTML = result;
+        }
+        document.getElementById("search").disabled = false;
+      }).search_the_nearest_stations_with_this_name(document.getElementById('address_to_go').value, document.getElementById("choice_map").map_or_none.value);
+    }
+
+    window.addEventListener("beforeunload", function() {
+      google.script.run.deleteImages(); //  新しいタブを作る形でGoogle Mapを表示させてるから, navigate条件とか考えなくてよかった.
+    });
+  </script>
+</html>
