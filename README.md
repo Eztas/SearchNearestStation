@@ -100,7 +100,8 @@ html版はスマホでの使いやすさに追求する.
 
 <h3>Google Mapそのものをiframeで埋め込みたかった</h3>
 
-Maps.newStaticMapで対応.
+Google Apps Scriptで作ったwebページやGithub Pagesでは, ルート情報を載せたGoogle Mapは掲載できない.(2024/4/12時点でも確認済み)
+そこでMaps.newStaticMapで対応.
 
 # SearchNearestStation with HTML and StaticMap(3/24)
 
