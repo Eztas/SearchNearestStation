@@ -1,3 +1,5 @@
+リンク(https://script.google.com/macros/s/AKfycbzxlj1v8qszxb652YSKw8bOYXcmE1nyNMK2s21Qx2LP7f83tQVfxQR6D9GJWiMVGPcnNw/exec)
+
 # SearchNearestStation(3/15)
 
 ある目的地へ向かうときに、いつもはまずその目的地における最寄り駅を調べ、さらにその場所から最寄り駅までの徒歩でかかる時間やルートも調べる。
@@ -128,6 +130,4 @@ html版はスマホでの使いやすさに追求する.
 
 道のりの長さで地図のズーム度合いを決めていたが, 距離(2地点の直線距離)の長さで決定する.
 (テスト検索先 大阪城,  東京スカイツリー,　京都水族館その他)
-
-リンク(https://script.google.com/macros/s/AKfycbzxlj1v8qszxb652YSKw8bOYXcmE1nyNMK2s21Qx2LP7f83tQVfxQR6D9GJWiMVGPcnNw/exec)
 
